@@ -1,0 +1,92 @@
+\newpage
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{{\footnotesize \textbf{\shortprojname}}\hfill{\footnotesize \leftmark}}
+\fancyfoot[C]{\hfill\thepage\hfill}
+
+	
+\fontsize{16}{18} \chapter{LITERATURE REVIEW} \label{chap:LitRev}
+	{
+		\fontsize{12}{14}	
+		Qin Zou et al., explained “SLAM is an important method used in indoor navigation for
+		autonomous vehicles \& robots. It helps create a global map of the environment. At the same
+		time, the robot’s position \& direction are determined. Recently, visual SLAM has seen
+		improvements in its abilities. Still, it can have problems in low-texture places like warehouses
+		with plain white walls. This makes finding locations accurately very tough. On the other hand,
+		LiDAR SLAM is more robust. It uses 3D information from LiDAR point clouds, which is why
+		it is often chosen for industrial uses, like AGVs. Even though several LiDAR SLAM methods
+		have been developed over the years, it’s not always clear what their strengths \& weaknesses
+		are. This can confuse both researchers and engineers. To help with this, a comparison of
+		different indoor navigation methods based on LiDAR SLAM is being done. There will also be
+		extensive tests to check how they perform in the real world. The findings from this analysis
+		will help both academic and industry researchers pick the best LiDAR SLAM system for their
+		specific needs.” \cite{9381521}\\
+		
+		Rohit Roy et al., explained “This research introduces a motion control approach for IMRs. It uses e-SLAM techniques but has limited sensor tools—specifically, it relies only on LiDAR. The path planning starts with basic floor plans created as the IMR explores. It begins at reach points and moves through steps for both turning \& straight-line motion. Eventually,  this leads to calculated points that link the key spots. By using LiDAR data, the IMR learns about its position \& surroundings over time. Notably, the upper sections of the LiDAR image focus on finding its location, while the lower parts deal with spotting obstacles. As it moves from one important point to another, the IMR must compile a complete LiDAR image to plan its path 	effectively. A major obstacle here is that LiDAR is the only reference for checking against the planned route based on the floor map. This makes it crucial to adjust for accurate distances related to that map and manage any deviations from the IMR's path to steer clear of barriers. There are important considerations around LiDAR settings too as well as controlling the speed of IMR. This study offers a thorough, step-by-step guide on how to carry out path planning \& motion control using exclusively LiDAR data. Additionally, it combines various software parts while improving control strategies through trials with different proportional gains for position, direction, and speed of the LiDAR within the IMR system.” \cite{23073606} \\
+		
+		Dong Shen et al., proposed a comparison of three different 2D-SLAM algorithms that use
+		laser radar within the ROS. The algorithms under review are Gmapping, Hector-SLAM, \&
+		Cartographer. The focus is on how these algorithms help indoor mobile robots navigate in
+		unknown environments. To make this comparison possible, a mobile robot platform was
+		created using ROS. This setup allowed for tests in real-world conditions. Each SLAM
+		algorithm's ability to create maps was evaluated through experiments conducted in a simple
+		corridor and a lab with various obstacles. Moreover, ten unique points in the actual
+		environment were chosen. We measured distances from the maps and compared them to those
+		recorded by a laser range finder. This was done for error analysis. The results of these
+		experiments helped to highlight the strengths and weaknesses of each SLAM algorithm. In
+		summary, Gmapping shows the best mapping accuracy in basic, small-scene environments. On
+		the other hand, Hector-SLAM is better suited for long corridor situations. Meanwhile,
+		Cartographer has clear advantages when used in more complex surroundings. This analysis
+		gives useful insights for both researchers \& practitioners. It aids in choosing suitable SLAM
+		algorithms for different robotic uses. \cite{3351966}\\
+		
+		Lili Mu et al., The system showcases contemporaneous Localization and Mapping (SLAM).
+		It uses graph-grounded optimization. Different detectors are combined, similar to Light
+		Detection and Ranging (LiDAR), a D camera, encoders, \& an Inertial Measurement Unit
+		(IMU). This system is really at situating those four detectors together. It employs the UKF to
+		reuse the 2D LiDAR and RGB-D camera point shadows. A fascinating point is how it handles
+		3D LiDAR points pall data generated from the RGB- D camera. This data is integrated into the
+		SLAM process during the step called successional enrollment. By doing this, it effectively
+		matches the 2D LiDAR information with the 3D RGB- D information. It uses CSM ways in
+		this matching process. In addition, during circle check discovery, this system boosts delicacy
+		for vindicating circle closures. It does so by furnishing detailed descriptions of the 3D point
+		pall data after the original matching with 2D LiDAR. The viability and effectiveness of this
+		multi-sensor SLAM frame have been completely tested. This was done through theoretical
+		studies, simulation trials, \& physical tests. The results from these trials show that this new
+		SLAM approach achieves remarkable mapping issues, with great perfection \& delicacy.
+		Similar results punctuate its promising operations in advanced robotics. \cite{9178302}\\
+		
+		Misha Urooj Khan et al., provides an overview of contemporaneous Localization and
+		Mapping (SLAM), fastening on its capability to achieve concurrent localization and chart
+		creation through tone recognition. It highlights the rapid-fire advancements in LiDAR-
+		grounded SLAM technology, driven by the wide relinquishment of LiDAR detectors across
+		colourful technological sectors. The discussion begins with a relative analysis of different
+		detector technologies, including radar, ultrawideband positioning, and Wi-Fi, emphasizing
+		their functional significance in robotization, robotics, and other disciplines. A bracket of
+		LiDAR detectors is also presented in irregular form for clarity. Later, the paper introduces
+		LiDAR-grounded SLAM by outlining its general visual and fine modelling. It explores three
+		crucial features of LiDAR SLAM — mapping, localization, and navigation — ahead
+		concluding with a comparison of LiDAR SLAM against other SLAM technologies and
+		addressing the challenges encountered during its perpetration. This comprehensive
+		examination underscores the applicability and efficacity of LiDAR in advancing SLAM
+		operations. \cite{9526266}\\
+		
+		Y. Li et al., presents a cost-effective and efficient solution for autonomous navigation robots in indoor environments, featuring a modular mobile robot platform with a divided control system to enhance stability and reduce module coupling. Utilizing Lidar and an RGB-D camera (Kinect) for environmental sensing, the robot's software is developed on the Robot Operating System (ROS), implementing a SLAM algorithm based on particle filters for accurate localization and mapping in unknown spaces. Experimental results confirm that this system can create a reliable map of the indoor environment and successfully perform autonomous navigation tasks, characterized by its low cost, high performance, short development cycle, and easy scalability. \cite{8623225}\\
+		
+		Wan Abdul Syaqur et al., emphasizes the importance of mapping in robot navigation through a project focused on Simultaneous Localization and Mapping (SLAM) using the GMapping approach. A Turtlebot equipped with a Hokuyo Laser Range Finder (LRF) URG-04LX-UG01 was employed for mapping in three different locations at UniMAP, which included both indoor and mixed indoor-outdoor environments. The findings reveal that the indoor maps generated were significantly more accurate than those created in outdoor settings due to the laser scanner's limitations in providing precise measurements outdoors, resulting in difficulties with scan matching. \cite{8477629}\\
+		
+		S. Gatesichapakorn et al., presents the implementation of an autonomous mobile robot using the Robot Operating System (ROS), featuring a 2D LiDAR and RGB-D camera integrated with the ROS 2D navigation stack, all powered by a low-cost onboard computer with minimal power consumption. Prioritizing safety for both property and humans, the system utilizes official ROS packages with slight parameter modifications, while facing challenges such as hardware limitations and system configurations. The proposed system includes two setups: one on a Raspberry Pi 3 with only 2D LiDAR and another on an Intel NUC that combines 2D LiDAR and an RGB-D camera. Usability testing across multiple experiments demonstrated the robot's ability to navigate dynamically and avoid obstacles or stop in unavoidable situations, followed by a discussion of the challenges encountered and their solutions. \cite{8645984}\\
+		
+		Yi Kiat Tee et al., provides a comprehensive review and comparison of prevalent 2D SLAM (Simultaneous Localization and Mapping) systems in indoor static environments, utilizing ROS-based SLAM libraries on an experimental mobile robot equipped with a 2D LIDAR, IMU, and wheel encoders. It examines three common algorithms—GMapping, Hector-SLAM, and Google Cartographer—which are classified as either filter-based or graph-based SLAM for metrical map generation. Results from identical robot trajectories in both simulated and real-world settings facilitate analysis under varying conditions. The paper highlights the strengths and weaknesses of each algorithm, visualizes differences in generated maps, and underscores the importance of selecting the appropriate system for specific applications while identifying potential future optimization avenues.\cite{9538731}\\
+		
+		X. Yang et al., explains the design of an indoor service robot utilizing the Robot Operating System (ROS). The robot employs a two-dimensional LiDAR as its primary sensor to gather depth information about its surroundings, while a particle filter-based SLAM algorithm is implemented for mapping the environment. Within the ROS framework, both the A* algorithm and the Dynamic Window Approach (DWA) algorithm are utilized to enable effective navigation capabilities. To validate the functionalities of path planning, local obstacle avoidance, and navigation, simulations are conducted in the Gazebo environment.  \cite{Yang_2021}\\
+		
+		X. P. Cu et al., showcases the application of accelerated testing aimed at predicting the lifespan of continuous tracks used in combat vehicles. These tracks consist of modular links that form a closed chain, with rubber bushes situated at the joints between adjacent links. Consequently, the durability of the tracks is primarily influenced by the longevity of these rubber bushes. In the experiments, modular track links equipped with rubber bushes are mounted on a specialized testing rig that enables continuous rotation of the bushes at angles that mimic actual operating conditions. The paper presents the results of these tests along with a thorough evaluation of the findings. \cite{Cu_Xuan}\\
+		
+		Pedraza Yepes et al., addresses the design, simulation, and construction of a fuel storage tank-chassis coupled with a lifting system, which operates as a single unit alongside a Cummins QSK19 engine-driven HL260m pump. This system is capable of providing up to 12 continuous hours of operational autonomy and can be transported to various locations using lifting systems. The mechanical design adheres to the guidelines set by the American Institute of Steel Construction (AISC) and incorporates failure criteria for Von Mises ductile materials or Maximum Energy Distortion. The storage tank's dimensions are based on the average consumption specified by the manufacturer, and simulations were conducted using SolidWorks®. Ultimately, a functional and safe system suitable for on-site applications has been successfully developed. \cite{Pedraza_Des_2020}\\
+		
+		G. S. Wang et al., analyzes three factors contributing to the decreased shooting accuracy of a tank moving at high speeds, focusing on the linear vibration of its chassis. By examining real test data, the study reveals that the lateral shooting deviation caused by the chassis's linear vibration is minimal and does not significantly impair shooting accuracy. While this vibration has some effect on the imaging quality of the sighting telescope, it generally does not impact the sighting effectiveness. However, the more pronounced linear vibration of the crew seat results in poor ride comfort, making it challenging for the crew to accurately manipulate the sighting telescope, thereby affecting the overall sighting performance. Consequently, the primary influence of the linear vibration of the tank chassis on shooting accuracy is linked to its effect on ride comfort, which emerges as a critical factor in determining shooting accuracy while on the move. \cite{G_S_Wang}\\
+		
+		Lonare et al., explains that the chassis is fundamentally the base frame for various vehicles, such as automobiles, motorcycles, and carriages. Imagine it as a structural skeleton where multiple components of the vehicle are installed. When designing a chassis, several factors need to be taken into account, including material choice, strength, stiffness, and weight. For electric vehicles specifically, the most important criteria revolve around rigidity, strength, and cost-effectiveness. To meet the performance needs of the electric vehicle market, the chassis must be lightweight yet robust and durable. Given that the chassis supports a substantial amount of weight, it is regarded as one of the most vital elements of any vehicle, as it holds all the components and systems together. \cite{Lonare}\\
+	}	
